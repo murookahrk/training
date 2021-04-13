@@ -1,1 +1,6 @@
-p {color:blue; line-height:1.5;}
+body{
+    background-image: url(image/bg_body.png);
+  }
+  h1{
+    color: white; background-color: maroon;
+  }
