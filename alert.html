@@ -11,10 +11,16 @@
 <body>
     <div class="center">
         <p>
-            <span id="press-button"></span>回
-            <input type="button" value="ボタン" onclick="counter()">
+            <span id="press-button"></span>
+            <input type="button" value="ボタン" onclick="clickButton()">
         </p>
-    </div>    
+    </div>
+    <script>
+        let count = 1
+        function clickButton(){
+            alert(`クリックされた回数は、${count++}回です。`)
+        }
+    </script>
 </body>
 
 </html>
