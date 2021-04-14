@@ -1,0 +1,11 @@
+.center {
+    /*親要素*/
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .center p {
+    /*上下センタリングするもの*/
+    line-height: 150px;
+  }
