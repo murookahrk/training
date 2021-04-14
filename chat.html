@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function textcopy(){
+// テキストエリアの内容を取得
+var textarea = document.getElementById("textarea").value;
+// テキストエリアの内容を消去
+document.getElementById("textarea").value = "";
+// これまでに追加されたテキストとの連結を行う
+textarea = document.getElementById("insert").innerHTML + textarea;
+// "insert"のidが指定されたの要素の中に挿入
+document.getElementById("insert").innerHTML = "<div>" + textarea + "</div>";
+}
+
+//-->
+</script>
+
+</head>
+<html>
+<body>
+<form>
+<textarea id="textarea" rows="6" cols="80"></textarea>
+<p><button type="button" onclick="textcopy()">追加</button></p>
+<div id="insert"></div>
+</form>
+</body>
+</html>

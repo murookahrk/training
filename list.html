@@ -1,8 +1,33 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-
     <head>
         <script src="list.js"></script>
-    </head>
+        <link rel="stylesheet" type="text/css" href="list.css">
+        <meta charset="utf-8">
+        <title>list</title>
+        <script type="text/javascript">
 
+            function textcopy(){
+            // テキストエリアの内容を取得
+            var textarea = document.getElementById("textarea").value;
+            // テキストエリアの内容を消去
+            document.getElementById("textarea").value = "";
+            // これまでに追加されたテキストとの連結を行う
+            textarea = document.getElementById("insert").innerHTML + textarea;
+            // "insert"のidが指定されたの要素の中に挿入
+            document.getElementById("insert").innerHTML = "<div>" + textarea + "</div>";
+            }
+            
+            //-->
+            </script>
+    </head>
+<body>
+    <div class="center">
+<form action="#" method="post">
+    <div id="insert"></div>
+    <textarea id="textarea" rows="4" cols="40"></textarea>
+    <p><button type="button" onclick="textcopy()">押すなよ！</button></p>
+    </form>
+</div>
+</body>
 </html>
